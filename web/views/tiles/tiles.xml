@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- Base Definition -->
+    <definition name="base-definition"
+                template="/views/tiles/defaultLayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/views/tiles/defaultHeader.jsp" />
+<!--        <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />-->
+        <put-attribute name="body" value="" />
+<!--        <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />-->
+    </definition>
+
+    <!-- Home Page -->
+    <definition name="homePage" extends="base-definition">
+        <put-attribute name="title" value="Home Page" />
+        <put-attribute name="body" value="/views/homePage.jsp" />
+    </definition>
+
+    <!-- Prenotazioni -->
+    <definition name="prenotazioniUtente" extends="base-definition"> <!--Forse da cambiare in prenotazioniUtente-->
+        <put-attribute name="title" value="Prenotazioni" />
+        <put-attribute name="body" value="/views/prenotazioniUtente.jsp" />
+    </definition>
+
+    <!-- Parco Auto Page -->
+    <definition name="parcoAuto" extends="base-definition">
+        <put-attribute name="title" value="Parco Auto" />
+        <put-attribute name="body" value="/views/parcoAuto.jsp" />
+    </definition>
+
+    <!-- Multe Utente -->
+    <definition name="multeUtente" extends="base-definition">
+        <put-attribute name="title" value="Multe Utente" />
+        <put-attribute name="body" value="/views/multeUtente.jsp" />
+    </definition>
+
+    <!-- Codici sconto -->
+    <definition name="codiciSconto" extends="base-definition">
+        <put-attribute name="title" value="Codici Sconto" />
+        <put-attribute name="body" value="/views/codiciSconto.jsp" />
+    </definition>
+
+    <!-- Crea Multa Utente -->
+    <definition name="creaMultaUtente" extends="base-definition">
+        <put-attribute name="title" value="Crea Multa" />
+        <put-attribute name="body" value="/views/creaMultaUtente.jsp" />
+    </definition>
+
+    <!-- Crea Modifica Veicolo -->
+    <definition name="creaModificaVeicolo" extends="base-definition">
+        <put-attribute name="title" value="Crea Veicolo" />
+        <put-attribute name="body" value="/views/creaModificaVeicolo.jsp" />
+    </definition>
+
+    <!-- Crea Modifica Utente -->
+    <definition name="creaModificaUtente" extends="base-definition">
+        <put-attribute name="title" value="Crea Utente" />
+        <put-attribute name="body" value="/views/creaModificaUtente.jsp" />
+    </definition>
+
+    <!-- Crea Prenotazione Utente -->
+    <definition name="creaModificaPrenotazioneUtente" extends="base-definition">
+        <put-attribute name="title" value="Crea Prenotazione" />
+        <put-attribute name="body" value="/views/creaModificaPrenotazioneUtente.jsp" />
+    </definition>
+
+    <!-- Crea Buono Sconto -->
+    <definition name="creaModificaBuonoSconto" extends="base-definition">
+        <put-attribute name="title" value="Crea Buono Sconto" />
+        <put-attribute name="body" value="/views/creaModificaBuonoSconto.jsp" />
+    </definition>
+
+    <!-- Login e Logout -->
+    <definition name="index" extends="base-definition">
+        <put-attribute name="title" value="Log In" />
+        <put-attribute name="body" value="/index.jsp" />
+        <put-attribute name="header" value="" />
+    </definition>
+
+</tiles-definitions>
